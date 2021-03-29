@@ -2,8 +2,6 @@ package com.example.bookstore.Model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,7 +9,6 @@ import javax.persistence.Table;
 @Table(name="cmt")
 public class Cmt{
  @Id
- @GeneratedValue(strategy = GenerationType.AUTO)
  @Column(name = "cmtid")
  private String cmtid;
  private String userid;
@@ -72,9 +69,3 @@ public class Cmt{
     }
  
 }
-// ate table cmt (
-// 	bookid integer not null,
-//     userid varchar(225),
-//     cmtid varchar(225) not null,
-//     content TEXT,
-//     cmtdec int
